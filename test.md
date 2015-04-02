@@ -1,8 +1,8 @@
 ##DataHub Overview
-From: Al Wirtes
-To: Dave, Angela
-Date: Wed, Mar 18, 2015 at 10:38 AM
-Subject: DataHub Overview
+From: Al Wirtes  
+To: Dave, Angela  
+Date: Wed, Mar 18, 2015 at 10:38 AM  
+Subject: DataHub Overview  
 
 Hi Dave & Angela,
 
