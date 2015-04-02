@@ -17,7 +17,7 @@ DataHub is designed to be as flexible as possible to serve many use cases.  Curr
 
 We chose the Atom protocol in order to leverage standards-based tools for creating and consuming these feeds.  This  allowed us to build the system quickly, since we didn't have to reinvent any wheels.  I recommend that you choose a standards-based tool for consuming the Atom feeds for these same reasons. 
 
-We make extensive use of paging and HTTP response codes supported by the protocol. (A merged entity that no longer exists returns a 301 or "Moved Permanently," redirecting you to the target of the merge, etc.)
+We make extensive use of paging and HTTP response codesl. For example, an entry that has been deleted from your feed returns an HTTP status code of 410, or "Gone."  More specifically, it means "the requested resource is no longer available at the server, and no forwarding address is known." A merged entry that no longer exists at that address but has been combined into another entity returns a 301 or "Moved Permanently." We try to deliver as much information as possible, even when we have no entity to deliver.
 
 Typically, DataHub is used by:
 
