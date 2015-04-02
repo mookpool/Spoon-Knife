@@ -8,7 +8,7 @@ Hi Dave & Angela,
 
 Linda has asked me to provide you a general overview of our DataHub system.
 
-DataHub has two main features:
+DataHub has two main functions:
 
 1. RSS Atom feed of CRM change information.
 2. Full dealer demographic information available through a RESTful interface.
