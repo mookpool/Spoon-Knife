@@ -1,7 +1,4 @@
-Al Wirtes <al.wirtes@hunterdouglas.com>
-Wed, Mar 18, 2015 at 10:38 AM
-To: Dave, Angela
-Subject: DataHub Overview
+##DataHub Overview
 
 Hi Dave & Angela,
 
@@ -12,8 +9,9 @@ DataHub consists of an RSS Atom feed of change information for both companies an
 We chose the Atom protocol in order to leverage standards-based tools for both creating and consuming these feeds.  I would recommend that you pick a standards-based tool for consuming the Atom feeds. We make extensive use of paging and HTTP response codes supported by the protocol. (A merged HDID that no longer exists returns a 301 or "Moved Permanently," redirecting you to the target of the merge, etc.)
 
 Typically, DataHub is used by:
-	1.	Monitoring of Company and Individual Atom feeds for changes
-	2.	Following links provided in the change feed for full demographic and relational information
+1. Monitoring of Company and Individual Atom feeds for changes
+2. Following links provided in the change feed for full demographic and relational information
+
 Here is a sample Atom feed of changes:
 ````
 <?xml version="1.0" encoding="UTF-8"?>
