@@ -1,19 +1,19 @@
 ##DataHub Overview
 From: Al Wirtes  
-To: Dave, Angela  
+To: Dweezel, Moon Unit  
 Date: Wed, Mar 18, 2015 at 10:38 AM  
 Subject: DataHub Overview  
 
-Hi Dave & Angela,
+Hi Dweezel & Moon Unit,
 
-Linda has asked me to provide you with a general overview of our DataHub system.
+Frank has asked me to provide you with a general overview of our DataHub system.
 
-DataHub has two main functions:
+DataHub has two main parts:
 
-1. RSS Atom feed of CRM change information.
+1. An RSS Atom feed of CRM change information.
 2. Full dealer demographic information available through a RESTful interface.
 
-DataHub is designed to be as flexible as possible to serve many use cases.  Currently both iCM and our  Salesforce.com systems consume DataHub information. 
+DataHub is designed to be as flexible as possible to serve many use cases.  Currently both iCM and our  Salesforce.com systems consume DataHub information.
 
 We chose the Atom protocol in order to leverage standards-based tools for creating and consuming these feeds.  This  allowed us to build the system quickly, since we didn't have to reinvent any wheels.  I recommend that you choose a standards-based tool for consuming the Atom feeds for these same reasons. 
 
