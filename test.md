@@ -70,5 +70,5 @@ That's a high-level overview of how DataHub works. I have included sample files 
 
 Let me know when you'd like to get together for a quick call to go over the tool, our experiences using it, etc. We can take a deeper dive into the tool at that time.
 
-Thanks,
+I look forward to working with you on this project,  
 Al
