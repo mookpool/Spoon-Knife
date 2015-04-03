@@ -19,12 +19,12 @@ We chose the Atom protocol in order to leverage standards-based tools for creati
 
 We make extensive use of paging and HTTP response codes. For example, an entry that has been deleted from your feed returns an HTTP status code of 410, or "Gone."  More specifically, it means "the requested resource is no longer available at the server, and no forwarding address is known." A merged entry that no longer exists at that address but has been combined into another entity returns a 301 or "Moved Permanently." We try to deliver as much information as possible, even when we have no entity to deliver.
 
-Typically, DataHub is used by:
+Typically, DataHub information is read in a two-step process:
 
-1. Monitoring of Company and Individual Atom feeds for changes
-2. Following links provided in the change feed for full demographic and relational information
+1. Company and Individual Atom feeds are monitored for changes.
+2. Links in each Atom feed provide you a path full company or individual data so that you can update your system.
 
-Here is a sample Atom feed of changes:
+Here is a sample Atom feed of changes. The most recent changes are always at the top:
 ````
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dh="urn:datahub.hunterdouglas.com">
@@ -48,7 +48,7 @@ Here is a sample Atom feed of changes:
   <dh:end-index>300718</dh:end-index>
 </feed>
 ````
-In the first entry you can see that there has been a change to The Drapes of Wrath, Inc (HDID: 1656826). The link element provides a link to full information about the changed company, ```/datahub/companies/1656826```.  Following this link provides full information about the company:
+In the first entry you can see that there has been a change to The Drapes of Wrath, Inc (HDID: 1656826). The link element provides a link to full information about the changed company, ```/datahub/companies/1656826```.  Following this link provides full information about the company:
 ````
 <?xml version="1.0" encoding="UTF-8"?>
 <entry xmlns="http://www.w3.org/2005/Atom">
@@ -65,16 +65,12 @@ In the first entry you can see that there has been a change to The Drapes of Wra
         <Account>12345678</Account>
         <SalesRep HDID="1442742" href="/datahub/individuals/1442742">Salesman, Joe</SalesRep>
       </SponsoringFabricator>
-      <Contacts>
-        <Contact HDID="1656827" rel="employee" href="/datahub/individuals/1656827">Dealer, Gina</Contact>
-        <Contact HDID="1656827" rel="primary-contact" href="/datahub/individuals/1656827">Dealer, Gina</Contact>
-      </Contacts>
-      <Addresses>
+
 [...]
 ````
-Note that relationship information is provided in the ````<SponsoringFabricator>```` and ````<Contacts>```` sections. The same individual can have multiple relationships in the ````<Contacts>```` section. This is how multiple roles are represented.
+You would then use this data to make the necessary updates in your system.
 
-At this point you could continue to follow links in the contacts for individual data. For example, ````/datahub/individuals/1656827```` would provide you with similar information about Gina Dealer.  You could also monitor the individual Atom feed to listen for changes to individuals.
+At this point you could continue to follow links in the contacts for individual data. For example, ````/datahub/individuals/1442742```` would provide you with similar information about Joe Salesman.  You could also monitor the individual Atom feed to listen for changes to individuals.
 
 That's a high-level overview of how DataHub works. I have included sample files of the feeds mentioned here.
 
