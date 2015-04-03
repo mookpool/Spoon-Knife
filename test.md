@@ -41,12 +41,6 @@ Here is a sample Atom feed of changes. The most recent changes are always at the
   </entry>
 
 [...]
-
-  <link href="/datahub/companies" rel="self"/>
-  <link href="/datahub/companies?since-index=300718" rel="next"/>
-  <link href="/datahub/companies?since-index=0" rel="first"/>
-  <dh:end-index>300718</dh:end-index>
-</feed>
 ````
 In the first entry you can see that there has been a change to The Drapes of Wrath, Inc (HDID: 1656826). The link element provides a link to full information about the changed company, ```/datahub/companies/1656826```.  Following this link provides full information about the company:
 ````
