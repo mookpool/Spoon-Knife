@@ -13,7 +13,7 @@ DataHub has two main parts:
 1. An RSS Atom feed of CRM change information.
 2. Full dealer demographic information available through a RESTful interface.
 
-DataHub is designed to be as flexible as possible to serve many use cases.  Currently both iCM and our  Salesforce.com systems consume DataHub information.
+DataHub is designed to be as flexible as possible to serve many use cases.  Many of our internal systems already consume DataHub information.
 
 We chose the Atom protocol in order to leverage standards-based tools for creating and consuming these feeds.  This  allowed us to build the system quickly, since we didn't have to reinvent any wheels.  I recommend that you choose a standards-based tool for consuming the Atom feeds for these same reasons. 
 
